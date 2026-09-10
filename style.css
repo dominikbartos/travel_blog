@@ -37,6 +37,11 @@ header {
             font-size: 700;
         }
 
+        a:hover {
+            color: rgba(241, 201, 83, 1);
+            ;
+        }
+
     }
 }
 
@@ -54,20 +59,25 @@ footer {
         gap: 72px;
         font-family: 'Palanquin';
         font-size: 1rem;
-        a{
+
+        a {
             color: white;
             text-decoration: none;
         }
+
+        a:hover {
+            color: rgba(241, 201, 83, 1);
+        }
     }
-    
-    .copyright{
+
+    .copyright {
         gap: 4px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .social-media{
+    .social-media {
         display: flex;
         gap: 16px;
     }
