@@ -7,7 +7,7 @@
 body {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
 }
 
 header {
@@ -89,16 +89,15 @@ footer {
     transform: scale(1.2);
 }
 
-.highlights{
+.highlights {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
-    gap:88px
-    
+    align-items: center;
+    gap: 88px
 }
 
-.headline{
+.headline {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,16 +105,19 @@ footer {
     gap: 24px;
     width: 980px;
 
-    h2{
-        font-family:'Arima';
+    h2 {
+        font-family: 'Arima';
         font-weight: 700;
         color: rgba(78, 164, 135, 1);
         font-size: 3.25rem;
         text-align: center;
-        
+
+        img {
+            margin-right: 10px;
+        }
     }
-    
-    p{
+
+    p {
         font-family: 'Palanquin';
         font-weight: 500;
         font-size: 1.5rem;
@@ -124,22 +126,24 @@ footer {
 }
 
 
+
+
 .container-card {
     position: relative;
     width: 1200px;
-    height: 600px;
-    
+    height: 700px;
+
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    
+
     overflow: hidden;
-    
+
 }
 
-.container-card input{
+.container-card input {
     z-index: 2;
-    margin:5px;
+    margin: 5px;
     position: relative;
     left: 600px;
 }
@@ -148,27 +152,30 @@ footer {
     width: 200%;
     height: 100%;
     position: absolute;
-    
+
     display: flex;
-    
+
     transition: all 1s ease-in-out;
 }
 
-.card {
-    width: calc(100% / 2);
+.card>img {
     height: 100%;
-    border-top-right-radius:100px;
-    
-    
+    border-top-right-radius: 100px;
+    width: 100%;
 }
 
-.one{
+.one {
+    width: calc(100% / 2);
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    text-align: start;
+
 }
 
-.two{
+.two {
+    width: calc(100% / 2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,6 +184,69 @@ footer {
 .container-card input[value="two"]:checked~.cards {
     transform: translateX(calc(-100% / 2));
 }
+
 .container-card input[value="one"]:checked~.cards {
     transform: translateX(0);
+}
+
+.info-one {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 54px;
+    left: 38px;
+    width: 870px;
+    gap: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+
+
+
+    h3 {
+        font-family: 'Palanquin Dark';
+        font-weight: 600;
+        font-size: 3rem;
+        color: white;
+        padding: 16px 24px 0px 24px;
+    }
+
+    p {
+        font-family: 'Palanquin';
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: white;
+        padding: 0px 24px 16px 24px;
+
+    }
+
+}
+
+.info-two {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 54px;
+    left: 1238px;
+    width: 870px;
+    gap: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+
+    h3 {
+        font-family: 'Palanquin Dark';
+        font-weight: 600;
+        font-size: 3rem;
+        color: white;
+        padding: 16px 24px 0px 24px;
+    }
+
+    p {
+        font-family: 'Palanquin';
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: white;
+        padding: 0px 24px 16px 24px;
+
+    }
+
 }
