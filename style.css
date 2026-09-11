@@ -85,6 +85,98 @@ footer {
 
 }
 
-.social-media>a:hover{
+.social-media>a:hover {
     transform: scale(1.2);
+}
+
+.highlights{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap:88px
+    
+}
+
+.headline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 980px;
+
+    h2{
+        font-family:'Arima';
+        font-weight: 700;
+        color: rgba(78, 164, 135, 1);
+        font-size: 3.25rem;
+        text-align: center;
+        
+    }
+    
+    p{
+        font-family: 'Palanquin';
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+
+.container-card {
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    
+    overflow: hidden;
+    
+}
+
+.container-card input{
+    z-index: 2;
+    margin:5px;
+    position: relative;
+    left: 600px;
+}
+
+.cards {
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    
+    display: flex;
+    
+    transition: all 1s ease-in-out;
+}
+
+.card {
+    width: calc(100% / 2);
+    height: 100%;
+    border-top-right-radius:100px;
+    
+    
+}
+
+.one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-card input[value="two"]:checked~.cards {
+    transform: translateX(calc(-100% / 2));
+}
+.container-card input[value="one"]:checked~.cards {
+    transform: translateX(0);
 }
